@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="text/javascript"
+      src="https://cdn.scaledrone.com/scaledrone.min.js"
+    ></script>
+    <link rel="stylesheet" href="custom.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <title>Chat App</title>
+  </head>
+  <body>
+    <h1 class="title-app">Chat</h1>
+    <div class="chat-app">
+      <div class="wrapper">
+        <div class="message-wrap">
+          <div class="messages"></div>
+          <form class="message-form" onsubmit="return false;">
+            <input
+              class="message-form__input"
+              placeholder="Type a message.."
+              type="text"
+            />
+            <input class="message-form__button" value="Send" type="submit" />
+          </form>
+        </div>
+        <div class="members-wrap">
+          <div class="members-count">-</div>
+          <div class="members-list">-</div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
