@@ -124,7 +124,7 @@ body {
   .chat-app {
     display: block;
     position: absolute;
-    top: 146px;
+    top: 25px;
     left: 15%;
     right: 15%;
   }
@@ -141,7 +141,7 @@ body {
   .members-wrap {
     width: 100%;
     position: absolute;
-    top: -130px;
+    top: 377px;
     padding: 5px 15px 10px 15px;
   }
 
