@@ -105,11 +105,70 @@ body {
   color: White;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .wrapper {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
 @media (max-width: 767px) {
+  .title-app {
+    margin-top: 25px;
+  }
+
+  h1 {
+    font-size: 28px !important;
+  }
+
+  .chat-app {
+    display: block;
+    position: absolute;
+    top: 146px;
+    left: 15%;
+    right: 15%;
+  }
+
+  .messages {
+    height: 250px;
+  }
+
   .message-wrap {
     width: 100%;
+    padding: 15px;
   }
+
   .members-wrap {
+    width: 100%;
+    position: absolute;
+    top: -130px;
+    padding: 5px 15px 10px 15px;
+  }
+
+  .members-list {
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+  }
+
+  .members-count {
+    margin-bottom: 0;
+    padding: 5px 0px;
+  }
+
+  .message-form {
+    display: block;
+    width: 100%;
+  }
+
+  .message-form__button {
+    margin-top: 12px;
+  }
+
+  .message-form__input {
+    padding: 10px 10px;
+    margin-right: 5px;
     width: 100%;
   }
 }
+
