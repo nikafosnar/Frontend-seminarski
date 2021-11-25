@@ -1,0 +1,88 @@
+body {
+    width: 50%;
+    margin: 50px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+    background: linear-gradient(#b6fff7, #8a9efd);
+    padding: 20px;
+    margin: 0 10%;
+    box-shadow: 0 0 10px #8a9efd;
+}
+.container {
+    background: #fff;
+    width: fit-content;
+    margin: 0 auto;
+}
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.cont-todo {
+    text-align: center;
+}
+#textTodo {
+    font-size: 18px;
+    max-width: 200px;
+    border: none;
+    padding: 6px 25px 6px 7px;
+}
+#textTodo:hover {
+    box-shadow: 0 0 8px #738aff;
+}
+#addTodo {
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    color: #8a9efd;
+    padding: 3px 6px;
+    margin-left: -30px;
+    font-weight: bold;
+}
+#addTodo:hover {
+    background: #8a9efd;
+    color: #fff;
+}
+#toDos {
+    margin: 40px auto 20px;
+    max-width: 230px;
+}
+p {
+    margin-bottom: 0;
+    padding: 8px 10px;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: linear-gradient(#fff, rgb(221, 221, 221));
+    box-shadow: 0 0 2px #909090;
+}
+p:nth-child(n+2) {
+    margin-top: 10px;
+}
+p:hover {
+    transform: scale(1.02);
+}
+@media (max-width: 991px) {
+    p {
+        max-width: initial;
+    }
+    .wrapper {
+        margin: 0;
+    }
+}
+@media (max-width: 767px) {
+    body {
+        width: 65%;
+    }
+}
+@media (max-width: 479px) {
+    body {
+        width: 75%;
+    }
+    #textTodo {
+        max-width: 130px;
+    }
+}
