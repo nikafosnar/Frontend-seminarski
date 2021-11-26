@@ -34,3 +34,15 @@ body {
     margin: 0 5px;
     color: rgb(0, 255, 213);
 }
+@media (max-width: 479px) {
+    #time {
+        font-size: 40px;
+    }
+    #date * {
+        margin: 0 3px;
+        font-size: 15px;
+    }
+    .clock-wrap {
+        padding: 10px 15px 16px 15px;
+    }
+}
