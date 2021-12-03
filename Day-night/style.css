@@ -1,0 +1,195 @@
+.light {
+    background-color: rgb(185, 238, 231);
+    border: 1px solid rgb(145, 222, 252);
+    margin: 0 auto;
+    display: block;
+}
+.dark {
+    background: rgb(22, 22, 22);
+    border: 1px solid rgb(145, 222, 252);
+    margin: 0 auto;
+    display: block;
+}
+
+.light-b, .dark-b {
+    display: block;
+    margin: 40px auto 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 3px;
+    transition: 500ms;
+}
+.light-b:hover, .dark-b:hover {
+    transform: scale(1.2);
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+.light-b {
+    background: linear-gradient(rgb(83, 83, 83), rgb(54, 54, 54));
+    color: #fff;
+    border-color: #222;
+}
+.dark-b {
+    background: linear-gradient( rgb(253, 253, 104), rgb(255, 255, 20));
+    border-color: rgb(255, 217, 0);  
+}
+.grass {
+    fill: rgb(1, 73, 12);
+}
+.sun {
+    fill: #eff826;
+}
+.house {
+    fill: rgb(253, 193, 62);
+}
+.roof {
+    fill: brown;
+}
+.window {
+    fill: #fff;
+    stroke: rgb(165, 165, 165);
+}
+.window-line {
+    stroke: rgb(165, 165, 165);
+    stroke-width: 1;
+}
+.door {
+    fill: brown;
+}
+.three {
+    fill: green;
+}
+.three-bottom {
+    fill: rgb(141, 60, 5);
+}
+.decor {
+    fill: none;
+    stroke: rgb(6, 73, 20);
+    stroke-width: 1px;;
+}
+.dec-l {
+    fill: rgb(126, 15, 12);
+    animation-name: bigdec;
+    animation-duration: 1200ms;
+    animation-iteration-count: infinite;   
+}
+.dec-m {
+    fill: lawngreen;
+    animation-name: middec;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+}
+.dec-s {
+    fill: rgb(188, 190, 21);
+    animation-name: smalldec;
+    animation-duration: 1200ms;
+    animation-iteration-count: infinite;
+}
+.dark .grass {
+    fill: rgb(0, 32, 6);
+}
+.dark .sun {
+    fill: #c47f00;
+}
+.dark .house {
+    fill: rgb(148, 108, 21);
+}
+.dark .roof {
+    fill: rgb(85, 15, 15);
+}
+.dark .window {
+    fill: rgb(255, 234, 45);
+    stroke: rgb(138, 138, 138);
+}
+.dark .window-line {
+    stroke: rgb(138, 138, 138);
+    stroke-width: 1;
+}
+.dark .door {
+    fill: rgb(85, 15, 15);
+}
+.dark .three {
+    fill: rgb(0, 48, 0);
+}
+.dark .three-bottom {
+    fill: rgb(53, 21, 0);
+}
+.dark .decor {
+    stroke: rgb(8, 223, 8);
+}
+.dark .dec-l {
+    fill: rgb(248, 5, 5);
+}
+.dark .dec-s {
+    fill: yellow;
+}
+
+
+
+
+
+
+@keyframes bigdec {
+    0% {fill: red;}
+    50% {fill: rgb(255, 175, 3);}
+    100% {fill: red;}
+}
+@keyframes smalldec {
+    0% {fill: rgb(255, 251, 0);}
+    50% {fill: rgb(255, 4, 4);}
+    100% {fill: rgb(255, 238, 0);}
+}
+@keyframes middec {
+    0% {fill: rgb(42, 223, 6);}
+    50% {fill: rgb(255, 4, 58);}
+    100% {fill: rgb(72, 255, 0);}
+}
+  
+@media (max-width: 767px) {
+    body {
+        transform: scale(0.5);
+    }
+    svg {
+        transform: scaleX(0.9);
+        transform: translate(-10%, 40px);
+    }
+    .light-b, .dark-b {
+        padding: 40px;
+        font-size: 22px;
+        width: auto;
+        height: auto;
+    }
+    .dark .light-b, .dark-b {
+        padding: 40px;
+        font-size: 22px;
+    }
+}
+@media (max-width: 479px) {
+    body {
+        transform: scale(0.3);
+    }
+    svg {
+        transform: translate(-26%, -680px);
+        margin-left: 20px;
+    }
+}
+@media (max-width: 290px) {
+    .light-b, .dark-b {
+        padding: 30px;
+        font-size: 20px;
+    }
+    .dark .light-b, .dark-b {
+        padding: 30px;
+        font-size: 20px;
+    }
+    svg {
+        transform: translate(-32%, -680px);
+        margin-left: 20px;
+    }
+}
